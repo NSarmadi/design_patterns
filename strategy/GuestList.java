@@ -5,7 +5,7 @@ public class GuestList {
     private ArrayList<String> people;
     private SearchBehavior searchBehavior;
     public GuestList(String title){
-
+        this.title = title;
     }
     public boolean add(String person){
         if (searchBehavior.contains(people,person))
