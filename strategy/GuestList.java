@@ -5,6 +5,8 @@ public class GuestList {
     private ArrayList<String> people;
     private SearchBehavior searchBehavior;
     public GuestList(String title){
+        this.searchBehavior = new LinearSearch();
+        this.people = new ArrayList<String>();
         this.title = title;
     }
     public boolean add(String person){
