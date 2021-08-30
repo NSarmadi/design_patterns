@@ -1,6 +1,7 @@
 import java.util.Collections;
 import java.util.ArrayList;
-
+//https://stackabuse.com/binary-search-in-java/,
+//used as reference for development of binary search.
 public class BinarySearch implements SearchBehavior {
     public boolean contains(ArrayList<String> data, String item){
         Collections.sort(data);

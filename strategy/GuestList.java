@@ -1,14 +1,17 @@
 import java.util.ArrayList;
 
 public class GuestList { 
+    //enumeration
     private String title;
     private ArrayList<String> people;
     private SearchBehavior searchBehavior;
     public GuestList(String title){
+        //creating constructors
         this.searchBehavior = new LinearSearch();
         this.people = new ArrayList<String>();
         this.title = title;
     }
+    //method to add a person using boolean 
     public boolean add(String person){
         if (searchBehavior.contains(people,person))
         {
@@ -21,6 +24,7 @@ public class GuestList {
         }
 
     }
+    //method to remove a person using boolean
     public boolean remove(String person) {
         if (searchBehavior.contains(people,person))
         {
@@ -32,7 +36,7 @@ public class GuestList {
             return false;
         }
     }
-
+    //method to return title
     public String getTitle(){
         return title; 
     }
