@@ -1,3 +1,4 @@
+//Written by Neekon Sarmadi
 //Interface for the Store class and Customer class.
 public interface Observer{
   public void update(Book book);

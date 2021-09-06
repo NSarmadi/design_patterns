@@ -1,3 +1,4 @@
+//Written by Neekon Sarmadi
 import java.util.ArrayList;
 //Implements class observer.
 public class Customer implements Observer{

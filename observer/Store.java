@@ -1,3 +1,4 @@
+//Written by Neekon Sarmadi
 import java.util.LinkedList;
 import java.util.Queue;
 //Implements observer class

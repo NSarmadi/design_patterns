@@ -1,3 +1,4 @@
+//Written by Neekon Sarmadi
 //Interface for the BestSellers class.
 public interface Subject{
     public void registerObserver(Observer observer);

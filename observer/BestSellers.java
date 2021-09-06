@@ -1,3 +1,4 @@
+//Written by Neekon Sarmadi
 import java.util.Observable;
 import java.util.ArrayList;
 //Implements class subject
