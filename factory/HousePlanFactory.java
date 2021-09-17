@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
-public abstract class HousePlanFactory extends @HousePlan(){
-    public HousePlan createHousePlan(String type){
+public abstract class HousePlanFactory extends HousePlan{
+    public static HousePlan createHousePlan(String type){
     HousePlan housePlan;
 
     if(type.equals("logCabin")){
@@ -13,8 +13,15 @@ public abstract class HousePlanFactory extends @HousePlan(){
     }else{
         housePlan = new LogCabinPlan();
     }
+    housePlan.setFeatures();
+    housePlan.setMaterials();
+    housePlan.getFeatures();
+    housePlan.getMaterials();
+    housePlan.getNumRooms();
+    housePlan.getNumWindows();
+    housePlan.getSquareFeet();
     
-
+    return housePlan;
     }
  }
-}
+

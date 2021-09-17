@@ -14,12 +14,8 @@ public abstract class HousePlan {
         this.materials = new ArrayList<String>();
         this.features = new ArrayList<String>();
     }
-    protected void setMaterials(){
-        return setMaterials();
-    }
-    protected void setFeatures(){
-        return fea
-    }
+    protected abstract void setMaterials();
+    protected abstract void setFeatures();
     public ArrayList<String> getMaterials() {
         return materials;
     }
@@ -37,8 +33,17 @@ public abstract class HousePlan {
     }
     public String toString(){
         String result = "";
-        result += "---------" + materials + "-------\n";
-        result += "---------" + features + "-------\n"
+        result += "Square Feet: "+ squareFeet + "\n";
+        result += "Rooms: " + numRooms + "\n";
+        result += "Windows: " + numWindows + "\n";
+        
+        for(String mt : materials){
+            result += mt + "\n";
+        }
+        for(String ft : features){
+            result += ft+ "\n";
+        }
+        return result;
     }
 
 }
