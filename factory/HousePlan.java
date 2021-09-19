@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public abstract class HousePlan {
+public abstract class HousePlan{
     protected ArrayList<String> materials;
     protected ArrayList<String> features;
     private int numRooms;
@@ -16,10 +16,10 @@ public abstract class HousePlan {
     }
     protected abstract void setMaterials();
     protected abstract void setFeatures();
-    public ArrayList<String> getMaterials() {
+    public ArrayList<String> getMaterials(){
         return materials;
     }
-    public ArrayList<String> getFeatures() {
+    public ArrayList<String> getFeatures(){
         return features;
     }
     public int getNumRooms(){
@@ -33,17 +33,17 @@ public abstract class HousePlan {
     }
     public String toString(){
         String result = "";
+        result += "\n";
         result += "Square Feet: "+ squareFeet + "\n";
         result += "Rooms: " + numRooms + "\n";
-        result += "Windows: " + numWindows + "\n";
+        result += "Windows: " + numWindows + "\n \n";
         
         for(String mt : materials){
-            result += mt + "\n";
+            result += "Materials: \n" + mt + "\n";
         }
         for(String ft : features){
-            result += ft+ "\n";
+            result += "Features:  \n" + ft + "\n";
         }
         return result;
     }
-
 }

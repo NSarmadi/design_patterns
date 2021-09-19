@@ -1,14 +1,12 @@
-import java.util.ArrayList;
-
-public abstract class HousePlanFactory extends HousePlan{
+public class HousePlanFactory{
     public static HousePlan createHousePlan(String type){
     HousePlan housePlan;
 
-    if(type.equals("logCabin")){
+    if(type.equals("log cabin")){
         housePlan = new LogCabinPlan();
-    }else if(type.equals("tinyHouse")){
+    }else if(type.equals("Tiny Home")){
         housePlan = new TinyHomePlan();
-    }else if(type.equals("contemporaryHouse")){
+    }else if(type.equals("contemporary home")){
         housePlan = new ContemporaryPlan();
     }else{
         housePlan = new LogCabinPlan();
@@ -24,4 +22,3 @@ public abstract class HousePlanFactory extends HousePlan{
     return housePlan;
     }
  }
-

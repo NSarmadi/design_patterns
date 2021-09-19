@@ -3,10 +3,10 @@ public class LogCabinPlan extends HousePlan{
         super(2, 10, 1800);
     }
     protected void setMaterials(){
-        materials.add("Log Siding, Board and Batten Siding, White Pine");
+        this.materials.add("- Log Siding \n- Board and Batten Siding \n- White Pine \n");
     }
     protected void setFeatures(){
-        features.add("Timbered Roof, High Insulation, Rustic Effect");
+        this.features.add("- Timbered Roof \n- High Insulation \n- Rustic Effect \n");
     }
     public String toString(){
         return "Log Cabin " + super.toString();

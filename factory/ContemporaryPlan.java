@@ -3,10 +3,10 @@ public ContemporaryPlan(){
     super(5, 40, 3000);
 }
 protected void setMaterials(){
-    this.materials.add("Ceramics, High-Strength Alloys, Composites");
+    this.materials.add("- Ceramics \n- High-Strength Alloys \n- Composites \n");
 }
 protected void setFeatures(){
-    this.features.add("Oversized Windows, Unconventional Roofs, Minimalism, Open Floor Plan");
+    this.features.add("- Oversized Windows \n- Unconventional Roofs \n- Minimalism \n- Open Floor Plan \n");
 }
 public String toString(){
     return "Contemporary Plan" + super.toString();
