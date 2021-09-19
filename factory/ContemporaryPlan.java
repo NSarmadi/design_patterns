@@ -9,6 +9,6 @@ protected void setFeatures(){
     this.features.add("- Oversized Windows \n- Unconventional Roofs \n- Minimalism \n- Open Floor Plan \n");
 }
 public String toString(){
-    return "Contemporary Plan" + super.toString();
+    return "Contemporary Home" + super.toString();
 }
 }
