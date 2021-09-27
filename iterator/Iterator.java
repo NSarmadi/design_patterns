@@ -1,8 +1,5 @@
-public interface Iterator{
-    public boolean hasNext(){
-
-    }
-    public Object next(){
-        
-    }
-}
+//@author Neekon Sarmadi
+// public interface Iterator{
+//     public boolean hasNext();    
+//     public Object next();
+// }
