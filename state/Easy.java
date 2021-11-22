@@ -7,6 +7,9 @@ public Easy(ArithemeticGame game){
     this.game = game;
 }
 
+/**
+ * Method to return a number between 1 and 10.
+ */
 public int getNum(){
     int min = 1;
     int max = 10;
@@ -17,6 +20,9 @@ public int getNum(){
     return rand;
 }
 
+/**
+ * Method to randomly return either a + or -.
+ */
 public String getOperation(){
     String[] operator = {"+","-"};
     Random rand = new Random();
@@ -24,11 +30,17 @@ public String getOperation(){
     return stringrand;
 }
 
+/**
+ * Method to advance the game to medium state
+ */
 public void levelUp(){
     this.game.setState(this.game.getMediumState());
     System.out.println("You're doing so well, lets go up one!");
 }
 
+/**
+ * Method to insult the player for being dumb.
+ */
 public void levelDown(){
     System.out.println("It cant get any easier than this, try going back to elementary school.");
 }

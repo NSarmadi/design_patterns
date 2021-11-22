@@ -16,7 +16,11 @@ public ArithemeticGame(){
     reader = new Scanner(System.in);
 }
 
-
+/**
+ * Method that gets two numbers and an operation from the state,
+ * when the player gets a question right it will increase the score by 1,
+ * when the player gets a question wrong, it will decrease the score by 1.
+ */
 public void pressQuestionButton(){
     int first = state.getNum();
     int second = state.getNum();
@@ -68,19 +72,31 @@ public void pressQuestionButton(){
     }
 }   
     
-
+/**
+ * Method to set the state
+ * @param state state being set
+ */
 public void setState(State state){
     this.state = state;
 }
-
+/**
+ * Method to return the easyState
+ * @return returns the easy state.
+ */
 public State getEasyState(){
     return easyState;
 }
-
+/**
+ * Method to return the medium state.
+ * @return returns the medium state.
+ */
 public State getMediumState(){
     return mediumState;
 }
-
+/**
+ * Method to return the hard state.
+ * @return returns the hard state.
+ */
 public State getHardState(){
     return hardState;
 }
